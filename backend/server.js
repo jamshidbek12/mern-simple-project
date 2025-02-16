@@ -21,7 +21,7 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
   });
 }
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5001;
 
 app.listen(PORT, () => {
   connectDB();
